@@ -1,6 +1,7 @@
 package collections.arrayLists;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ArrayLists {
 
@@ -9,6 +10,10 @@ public class ArrayLists {
 		//Declaration
 		ArrayList<Integer> arrList1 = new ArrayList<Integer>();
 		ArrayList<String> arrList2 = new ArrayList<String>();
+		
+		//initialize an ArrayList
+		ArrayList<Integer> arrList3 = new ArrayList<Integer>(
+				Arrays.asList(3,4,2,5,1));
 		
 		//add elements
 		arrList1.add(1);
