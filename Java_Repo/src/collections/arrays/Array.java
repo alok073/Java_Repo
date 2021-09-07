@@ -1,6 +1,8 @@
 package collections.arrays;
 
-public class Arrays {
+import java.util.Arrays;
+
+public class Array {
 
 	public static void main(String[] args) {
 		//Declaration
@@ -34,6 +36,20 @@ public class Arrays {
 		for(int i=0;i<array5.length;i++) {
 			System.out.print(array5[i] + " ");
 		}
+		
+		//sort an array
+		Arrays.sort(array2);
+		
+		//fill an array
+		int arrayTemp[] = new int[5];
+		Arrays.fill(arrayTemp, -1);
+		
+		//apply binary search
+		int arrayTemp2[] = new int[] {1,3,5,6,8,10};
+		int searchIndex = Arrays.binarySearch(arrayTemp2, 5);
+		
+		//slice an array 
+		Arrays.copyOfRange(array2, 0, 3); // {1,2,3}
 	}
 	
 	private static int sum(int array[]) {
